@@ -3,7 +3,7 @@ from flask import Flask, jsonify, request
 import pymongo
 import datetime
 
-connection_url = 'mongodb+srv://kashyapurvi:popxo@1234@cluster0.cei5i.mongodb.net/<dbname>?retryWrites=true&w=majority'
+connection_url = 'mongodb+srv://kashyapurvi:popxo1234@cluster0.cei5i.mongodb.net/<dbname>?retryWrites=true&w=majority'
 app = Flask(__name__)
 CORS(app)
 client = pymongo.MongoClient(connection_url)
@@ -102,7 +102,7 @@ def view(value):
 
 
 
-@app.route('/detail-detail/id/<idvalue>/<newval>', methods=['GET'])
+@app.route('/update-detail/id/<idvalue>/<newval>', methods=['GET'])
 def updatedetail(idvalue, newval):
 
     queryObj = {"_id": int(idvalue)}  
