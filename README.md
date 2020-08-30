@@ -31,7 +31,7 @@ ticket Schema:
 _id:tid
 name: Username,
 phone: phone number of user,
-showtime: movie time,  %12pm %3pm
+showtime: movie time,  %10pm %2pm
 currtime: current time of inserting to delete Query object after 8 hours.
 
 datastore schema:
